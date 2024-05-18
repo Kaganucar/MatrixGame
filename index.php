@@ -371,6 +371,8 @@
                 } else if (userscore < aiscore) {
                     document.getElementById('gameStatus').innerHTML = "Kazanan AI";
                 } else if (userscore == aiscore) {
+                    document.getElementById('userScoreText').innerHTML = userscore;
+                    document.getElementById('aiScoreText').innerHTML = aiscore;
                     document.getElementById('gameStatus').innerHTML = "Berabere";
                 }
                 document.getElementById('restartGame').classList.remove('d-none');
@@ -387,6 +389,8 @@
                     document.getElementById('gameStatus').innerHTML = "Kazanan AI";
                 } else if (userscore == aiscore) {
                     document.getElementById('gameStatus').innerHTML = "Berabere";
+                    document.getElementById('userScoreText').innerHTML = userscore;
+                    document.getElementById('aiScoreText').innerHTML = aiscore;
                 }
                 document.getElementById('restartGame').classList.remove('d-none');
                 return;
